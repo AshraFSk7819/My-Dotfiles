@@ -1,0 +1,35 @@
+{
+  "logo": {
+    "type": "kitty-direct",
+    "source": "~/.config/fastfetch/images/reze.png",
+     "height": 12, // Adjust height as needed (in number of characters)
+    "width": 24,
+    "padding": {
+      "right": 2
+    }
+  },
+
+  "display": {
+    "separator": " : "
+  },
+
+  "modules": [
+    { "type": "title" },
+
+    { "type": "custom", "format": "\n" },
+
+    { "type": "os", "key": "distribution" },
+    { "type": "kernel", "key": "linux kernel" },
+    { "type": "packages", "key": "packages" },
+    { "type": "shell", "key": "unix shell" },
+    { "type": "terminal", "key": "terminal" },
+    { "type": "wm", "key": "window manager" },
+
+    { "type": "custom", "format": "\n" },
+
+    {
+      "type": "custom",
+      "format": "\u001b[31m⬤ \u001b[33m⬤ \u001b[32m⬤ \u001b[36m⬤ \u001b[34m⬤ \u001b[35m⬤ \u001b[91m⬤ \u001b[92m⬤ \u001b[0m"
+    }
+  ]
+}
