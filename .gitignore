@@ -1,0 +1,52 @@
+# =========================
+# General junk
+# =========================
+*~
+*.bak
+*.old
+*.tmp
+*.log
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Cache & runtime
+# =========================
+.cache/
+.state/
+.npm/
+.node-gyp/
+.python_history
+
+# =========================
+# Flatpak / user data (DO NOT COMMIT)
+# =========================
+.local/share/
+.local/state/
+.local/lib/
+
+# =========================
+# Secrets (never commit)
+# =========================
+.env
+*.key
+*.pem
+*.secret
+*.token
+
+# =========================
+# OS-specific
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Git internals (safety)
+# =========================
+.git/modules/
