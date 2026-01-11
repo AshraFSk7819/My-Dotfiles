@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DIR="$HOME/.config/fastfetch"
+CFG="$DIR/config.jsonc"
+CFG1="$DIR/config1.jsonc"
+TMP="$DIR/.config.tmp"
+
+[[ -f "$CFG" && -f "$CFG1" ]] || {
+  echo "❌ Fastfetch configs missing"
+  return 1
+}
+
+mv "$CFG" "$TMP"
+mv "$CFG1" "$CFG"
+mv "$TMP" "$CFG1"
+
+fastfetch
